@@ -20,10 +20,12 @@
         <main>
             <h1>Головна</h1>
             <h2>Предмети</h2>
-            <div>
-                <div>
-                    <h3>Веб-програмування</h3>
-                    <p>Kількість завдань: 20</p>
+            <div class="subjects">
+                <article class="subject">
+                    <header>
+                        <h3>Веб-програмування</h3>
+                        <p>Kількість завдань: 20</p>
+                    </header>
                     <progress value="1" max="20"></progress>
                     <ul>
                         <li>
@@ -39,33 +41,37 @@
                             <input type="checkbox" id="task3">
                         </li>
                     </ul>
-                </div>
-                <div>
-                    <h3>Криптотрейдинг</h3>
-                    <p>Kількість завдань: 6</p>
-                    <progress value="2" max="6"></progress>
+                </article>
+                <article class="subject">
+                    <header>
+                        <h3>Маркетинг у ІТ</h3>
+                        <p>Kількість завдань: 20</p>
+                    </header>
+                    <progress value="1" max="20"></progress>
                     <ul>
                         <li>
-                            <label for="task4">Практична 2 (5 днів)</label>
+                            <label for="task4">Практична 1 (2 дні)</label>
                             <input type="checkbox" id="task4">
                         </li>
                         <li>
-                            <label for="task5">Практична 3 (12 днів)</label>
+                            <label for="task5">Практична 2 (10 днів)</label>
                             <input type="checkbox" id="task5">
                         </li>
                         <li>
-                            <label for="task6">Практична 4 (19 днів)</label>
+                            <label for="task6">Тест 2 (2 дні)</label>
                             <input type="checkbox" id="task6">
                         </li>
                     </ul>
-                </div>
-                <div>
-                    <h3>Алгоритми і структури даних</h3>
-                    <p>Kількість завдань: 15</p>
-                    <progress value="1" max="15"></progress>
+                </article>
+                <article class="subject">
+                    <header>
+                        <h3>Менеджмент у ІТ</h3>
+                        <p>Kількість завдань: 30</p>
+                    </header>
+                    <progress value="1" max="30"></progress>
                     <ul>
                         <li>
-                            <label for="task7">Практична 1 (3 дні)</label>
+                            <label for="task7">Практична 1 (2 дні)</label>
                             <input type="checkbox" id="task7">
                         </li>
                         <li>
@@ -73,11 +79,65 @@
                             <input type="checkbox" id="task8">
                         </li>
                         <li>
-                            <label for="task9">Лабораторна 2 (5 днів)</label>
+                            <label for="task9">Курс 6-й модуль</label>
                             <input type="checkbox" id="task9">
                         </li>
                     </ul>
-                </div>
+                </article>
+                <article class="subject">
+                    <header>
+                        <h3>Кар'єрні навички</h3>
+                        <p>Kількість завдань: 30</p>
+                    </header>
+                    <progress value="30" max="30"></progress>
+                    <ul>
+                        <li>
+                            <p>Усі завдання виконано</p>
+                        </li>
+                    </ul>
+                </article>
+                <article class="subject">
+                    <header>
+                        <h3>Криптотрейдинг</h3>
+                        <p>Kількість завдань: 6</p>
+                    </header>    
+                    <progress value="2" max="6"></progress>
+                    <ul>
+                        <li>
+                            <label for="task10">Практична 2 (5 днів)</label>
+                            <input type="checkbox" id="task10">
+                        </li>
+                        <li>
+                            <label for="task11">Практична 3 (12 днів)</label>
+                            <input type="checkbox" id="task11">
+                        </li>
+                        <li>
+                            <label for="task12">Практична 4 (19 днів)</label>
+                            <input type="checkbox" id="task12">
+                        </li>
+                    </ul>
+                </article>
+                <article class="subject">
+                    <header>
+                        <h3>Алгоритми і структури даних</h3>
+                        <p>Kількість завдань: 15</p>
+                    </header>
+                    <progress value="1" max="15"></progress>
+                    <ul>
+                        <li>
+                            <label for="task13">Практична 1 (3 дні)</label>
+                            <input type="checkbox" id="task13">
+                        </li>
+                        <li>
+                            <label for="task14">Практична 2 (10 днів)</label>
+                            <input type="checkbox" id="task14">
+                        </li>
+                        <li>
+                            <label for="task15">Лабораторна 2 (5 днів)</label>
+                            <input type="checkbox" id="task15">
+                        </li>
+                    </ul>
+                </article>
                 <button>Додати предмет</button>
             </div>
         </main>
