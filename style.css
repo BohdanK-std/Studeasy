@@ -104,9 +104,18 @@ body > header p {
     font-size: 24px;
     font-weight: bold;
 }
+
 nav{
     display: flex;
-    gap: 10px;
+    gap: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    color:#f0f0f0;
+    font-size: 16px;
+    font-weight: bold;
 }
 
 main {
@@ -118,6 +127,48 @@ main {
     border-radius: 10px;
     margin: 20px 20px 20px 20px;
     padding: 20px;
+}
+
+fieldset {
+   border-radius: 10px; 
+   display: flex;
+   flex-direction: column;
+   padding: 15px;
+   gap: 15px;
+}
+
+input {
+    border-radius: 15px;
+    border: 1;
+    height: 30px;
+    padding-left: 10px;
+    outline-style: none;
+    box-shadow: none;
+}
+
+input[type="file"]{
+    padding: 0
+}
+
+input[type="file"]::file-selector-button {
+    background-color: #888080;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    height: 30px;
+    padding: 0 15px 0 15px;
+    cursor: pointer;
+
+}
+
+input:focus{
+    border-color: #3f3c3c;
+}
+
+fieldset > button{
+    border-radius: 15px;
+    height: 30px;
+    max-width: 120px;
 }
 
 aside {
