@@ -33,6 +33,22 @@
     height: 200px;
 }
 
+button{
+    background-color: #88808048;
+    border: 1px solid #888080;
+    border-radius: 10px;
+    color: #413b3b;
+}
+
+button:hover{
+    background-color: #b6abab;
+}
+button:active{
+    background-color: #4e4444;
+}
+
+
+
 .subject {
     background-color: #f0f0f0;
     border: 1px solid #888080;
@@ -67,6 +83,15 @@ progress::-webkit-progress-bar {
 
 progress::-webkit-progress-value {
     background-color: #3f3c3c;
+}
+
+aside > ul {
+    list-style: none;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 10px;
 }
 
 .subject ul {
@@ -137,7 +162,7 @@ fieldset {
    gap: 15px;
 }
 
-input {
+fieldset > input {
     border-radius: 15px;
     border: 1;
     height: 30px;
@@ -151,18 +176,39 @@ input[type="file"]{
 }
 
 input[type="file"]::file-selector-button {
-    background-color: #888080;
-    color: white;
-    border: none;
+    background-color: #88808048;
+    color: #413b3b;
+    border: 1px solid #888080;
     border-radius: 15px;
     height: 30px;
     padding: 0 15px 0 15px;
-    cursor: pointer;
-
 }
 
-input:focus{
-    border-color: #3f3c3c;
+input[type="file"]::file-selector-button:hover{
+    background-color: #b6abab;
+}
+
+input[type="file"]::file-selector-button:active{
+    background-color: #4e4444;
+}
+
+input:not([type="file"]) {
+    border: 1px solid #888080;
+    border-radius: 15px;
+    padding: 10px;
+    background-color: #f0f0f0;
+
+    outline: none;
+    box-shadow: none;
+    appearance: none;
+}
+
+input:not([type="file"]):hover {
+    border: 1px solid #575151;
+}
+
+input:not([type="file"]):focus {
+    border: 1px solid #1e1c1c;
 }
 
 fieldset > button{
