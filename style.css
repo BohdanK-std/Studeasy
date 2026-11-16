@@ -47,8 +47,6 @@ button:active{
     background-color: #4e4444;
 }
 
-
-
 .subject {
     background-color: #f0f0f0;
     border: 1px solid #888080;
@@ -56,6 +54,7 @@ button:active{
     display: flex;
     flex-direction: column;
     height: 200px;
+    overflow: hidden;
 }
 
 .subject header {
@@ -65,6 +64,12 @@ button:active{
     flex-direction: column;
     justify-content: flex-start;
     padding: 10px 10px 5px 10px;
+}
+
+.subject header h3 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .subject progress {
@@ -106,6 +111,12 @@ aside > ul {
 .subject li {
     display: flex;
     justify-content: space-between;
+}
+
+.subject label{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .subject input[type="checkbox"] {
@@ -192,7 +203,7 @@ input[type="file"]::file-selector-button:active{
     background-color: #4e4444;
 }
 
-input:not([type="file"]) {
+fieldset > input:not([type="file"]) {
     border: 1px solid #888080;
     border-radius: 15px;
     padding: 10px;
