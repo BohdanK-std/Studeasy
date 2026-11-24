@@ -59,11 +59,11 @@ button:active{
 
 .subject header {
     background-color: #888080;
-    border-radius: 8px 8px 0 0;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     padding: 10px 10px 5px 10px;
+    overflow: hidden;
 }
 
 .subject header h3 {
@@ -120,8 +120,8 @@ aside > ul {
 }
 
 .subject input[type="checkbox"] {
-    width: 20px;
-    height: 20px;
+    width: 24px;
+    height: 24px;
     border: none;
     border-radius: 5px;
 }
@@ -143,7 +143,7 @@ body > header p {
 
 nav{
     display: flex;
-    gap: 20px;
+    gap: 10px;
 }
 
 a {
@@ -152,6 +152,12 @@ a {
     color:#f0f0f0;
     font-size: 16px;
     font-weight: bold;
+    padding: 5px 20px 10px 20px;
+}
+
+a:hover{
+    background-color: #5f595987;
+    border-radius: 20px;
 }
 
 main {
@@ -177,6 +183,7 @@ fieldset > input {
     border-radius: 15px;
     border: 1;
     height: 30px;
+    max-width: 50%;
     padding-left: 10px;
     outline-style: none;
     box-shadow: none;
@@ -239,4 +246,38 @@ aside {
 footer {
     grid-area: footer;
     max-height: 50px;
+    padding: 10px;
+}
+
+fieldset > input:invalid{
+    border-color: #ff0000;    
+}
+
+.about{
+    padding-left: 20px;
+}
+
+.table-container{
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #888080;
+    max-width: 50%;
+}
+
+table{
+    border-collapse: collapse;
+    border: 1px solid #888080;
+    border-radius: 10px;
+    overflow: hidden;
+    max-width: 1fr;
+}
+
+th{
+    border: 1px solid #888080;
+    padding: 5px;
+}
+
+td{
+    border: 1px solid #888080;
+    padding: 5px;
 }
