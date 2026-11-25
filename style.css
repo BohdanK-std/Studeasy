@@ -185,7 +185,13 @@ fieldset {
    gap: 15px;
 }
 
-fieldset > input {
+.form-group{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.form-group > input {
     border-radius: 15px;
     border: 1;
     height: 30px;
@@ -216,7 +222,7 @@ input[type="file"]::file-selector-button:active {
     background-color: #4e4444;
 }
 
-fieldset > input:not([type="file"]) {
+.form-group > input:not([type="file"]) {
     border: 1px solid #888080;
     border-radius: 15px;
     padding: 10px;
@@ -225,6 +231,10 @@ fieldset > input:not([type="file"]) {
     outline: none;
     box-shadow: none;
     appearance: none;
+}
+
+.form-group > input:invalid{
+    border-color: #ff0000;    
 }
 
 input:not([type="file"]):hover {
@@ -253,10 +263,6 @@ footer {
     grid-area: footer;
     max-height: 50px;
     padding: 10px;
-}
-
-fieldset > input:invalid{
-    border-color: #ff0000;    
 }
 
 .about {
