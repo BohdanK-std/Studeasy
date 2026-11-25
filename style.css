@@ -259,25 +259,33 @@ fieldset > input:invalid{
 
 .table-container{
     border-radius: 10px;
-    overflow: hidden;
     border: 1px solid #888080;
     max-width: 50%;
+    overflow: hidden;
 }
 
 table{
-    border-collapse: collapse;
-    border: 1px solid #888080;
-    border-radius: 10px;
-    overflow: hidden;
-    max-width: 1fr;
+    border-collapse: separate;
+    border-spacing: 0;
+    width: 100%;
 }
 
 th{
-    border: 1px solid #888080;
+    background-color: #bcafaf;
+    color: white;
     padding: 5px;
 }
 
-td{
-    border: 1px solid #888080;
+th, td{
+    border-bottom: 1px solid #888080;
+    border-right: 1px solid #888080;
     padding: 5px;
+}
+
+th:last-child, td:last-child{
+    border-right: none;
+}
+
+tbody tr:last-child td{
+    border-bottom: none;
 }
