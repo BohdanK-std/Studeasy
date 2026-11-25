@@ -1,4 +1,4 @@
-*{   
+* {   
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -33,17 +33,17 @@
     height: 200px;
 }
 
-button{
+button {
     background-color: #88808048;
     border: 1px solid #888080;
     border-radius: 10px;
     color: #413b3b;
 }
 
-button:hover{
+button:hover {
     background-color: #b6abab;
 }
-button:active{
+button:active {
     background-color: #4e4444;
 }
 
@@ -55,6 +55,12 @@ button:active{
     flex-direction: column;
     height: 200px;
     overflow: hidden;
+    transition: transform 0.2s ease;
+}
+
+.subject:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px #00000030;
 }
 
 .subject header {
@@ -113,7 +119,7 @@ aside > ul {
     justify-content: space-between;
 }
 
-.subject label{
+.subject label {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -141,7 +147,7 @@ body > header p {
     font-weight: bold;
 }
 
-nav{
+nav {
     display: flex;
     gap: 10px;
 }
@@ -155,7 +161,7 @@ a {
     padding: 5px 20px 10px 20px;
 }
 
-a:hover{
+a:hover {
     background-color: #5f595987;
     border-radius: 20px;
 }
@@ -189,7 +195,7 @@ fieldset > input {
     box-shadow: none;
 }
 
-input[type="file"]{
+input[type="file"] {
     padding: 0
 }
 
@@ -202,11 +208,11 @@ input[type="file"]::file-selector-button {
     padding: 0 15px 0 15px;
 }
 
-input[type="file"]::file-selector-button:hover{
+input[type="file"]::file-selector-button:hover {
     background-color: #b6abab;
 }
 
-input[type="file"]::file-selector-button:active{
+input[type="file"]::file-selector-button:active {
     background-color: #4e4444;
 }
 
@@ -229,7 +235,7 @@ input:not([type="file"]):focus {
     border: 1px solid #1e1c1c;
 }
 
-fieldset > button{
+fieldset > button {
     border-radius: 15px;
     height: 30px;
     max-width: 120px;
@@ -253,39 +259,38 @@ fieldset > input:invalid{
     border-color: #ff0000;    
 }
 
-.about{
+.about {
     padding-left: 20px;
 }
 
-.table-container{
+.table-container {
     border-radius: 10px;
     border: 1px solid #888080;
     max-width: 50%;
     overflow: hidden;
 }
 
-table{
+table {
     border-collapse: separate;
     border-spacing: 0;
     width: 100%;
 }
 
-th{
+th {
     background-color: #bcafaf;
-    color: white;
     padding: 5px;
 }
 
-th, td{
+th, td {
     border-bottom: 1px solid #888080;
     border-right: 1px solid #888080;
     padding: 5px;
 }
 
-th:last-child, td:last-child{
+th:last-child, td:last-child {
     border-right: none;
 }
 
-tbody tr:last-child td{
+tbody tr:last-child td {
     border-bottom: none;
 }
